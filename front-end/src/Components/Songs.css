@@ -1,0 +1,25 @@
+.table-custom,
+.table-custom thead,
+.table-custom tbody,
+.table-custom thead tr,
+.table-custom tbody tr,
+.table-custom thead tr th,
+.table-custom tbody tr td {
+  background-color: #000000 !important;
+  color: #808080 !important;
+  border-top: none;
+  border-left: none !important;
+  border-right: none !important;
+  border-bottom: 0.01rem solid #808080 !important;
+  padding: 1.5rem;
+}
+
+.table-custom tbody tr:hover {
+  background-color: #808080 !important;
+  color: #000000 !important;
+}
+
+.table-custom tbody tr:hover td {
+  background-color: #808080 !important;
+  color: #000000 !important;
+}

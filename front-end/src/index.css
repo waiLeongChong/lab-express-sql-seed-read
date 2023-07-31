@@ -1,0 +1,28 @@
+body {
+  background-color: #000000;
+}
+
+.main-color {
+  color: #ffb38a;
+}
+
+.second-color {
+  color: #ff6700;
+}
+
+.nav-bar-color {
+  background-color: #FF7043;
+}
+
+.btn-outline-main {
+  border-color: #ffb38a !important;
+}
+
+.btn-outline-main:hover,
+.btn-outline-main:focus,
+.btn-outline-main:active {
+  background-color: #ffb38a !important;
+  color: #ff6700 !important; 
+}
+
+
