@@ -1,0 +1,37 @@
+.Home {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.422), rgba(0, 0, 0, 0.95)), 
+              url('https://images.unsplash.com/photo-1639148604920-a85d6ff5a541?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffff;
+}
+
+.home-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+}
+
+.Home h1 {
+  background: -webkit-linear-gradient(rgba(173, 72, 18, 0.963), rgba(245, 151, 108, 0.263));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 10px;
+  margin: 0;
+  font-weight: bolder;
+}
+
+.Home .fa-compact-disc {
+  margin: 0 0.1em;
+}
+
+.home-icon {
+  color: #ffb38a96;
+}

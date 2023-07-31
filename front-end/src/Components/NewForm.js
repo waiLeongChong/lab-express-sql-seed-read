@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { Form, Button } from "react-bootstrap";
+import './NewForm.css';
 
 const API = process.env.REACT_APP_API_URL;
 
@@ -39,7 +40,7 @@ function NewForm() {
 
   return (
     <div className="container col-md-6 mt-5 text-white">
-      <Form onSubmit={handleSubmit}>
+      <Form className="form-border" onSubmit={handleSubmit}>
         <Form.Group className="mb-3">
           <Form.Label htmlFor="name">Name</Form.Label>
           <Form.Control
@@ -95,9 +96,11 @@ function NewForm() {
           />
         </Form.Group>
         
-        <Button variant="primary" type="submit">
-          Create
-        </Button>
+        <div className="d-flex justify-content-center">
+          <Button className="submit-btn w-100" type="submit">
+            Create
+          </Button>
+        </div>
       </Form>
     </div>
   );

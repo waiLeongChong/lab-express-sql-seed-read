@@ -7,7 +7,6 @@ import { faPlay } from '@fortawesome/free-solid-svg-icons'
 import Button from 'react-bootstrap/Button';
 
 
-
 function NavBar() {
   return (
     <Navbar className="p-3">

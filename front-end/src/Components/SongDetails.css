@@ -1,0 +1,14 @@
+.card-custom {
+  background-color: #000000 !important;
+  border-color: #ffb38a !important;
+}
+
+.custom-btn {
+  background-color: #ffb38a !important;
+  border: none !important;
+}
+
+.custom-btn:hover {
+  background-color: #ffb38a !important;
+  opacity: 0.8;
+}

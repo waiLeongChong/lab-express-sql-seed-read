@@ -3,7 +3,7 @@ import Songs from "../Components/Songs";
 function Index() {
   return (
     <div className="index">
-      <h2>Songs</h2>
+      <h2 className="text-center mt-2 text-secondary">Songs</h2>
       <Songs />
     </div>
   );

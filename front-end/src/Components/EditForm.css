@@ -1,0 +1,16 @@
+.edit-btn {
+  background-color: #ffb38a !important;
+  border: none !important;
+  padding: 10px 0px !important;
+  transition: background-color 0.3s ease;
+}
+
+.edit-btn:hover {
+  background-color: #ffa269 !important;
+}
+
+.form-border {
+  border: 1px solid #ffb38a;
+  padding: 50px 30px;
+  border-radius: 10px;
+}

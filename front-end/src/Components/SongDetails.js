@@ -5,7 +5,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMusic } from '@fortawesome/free-solid-svg-icons'
-
+import './SongDetails.css';
 
 const API = process.env.REACT_APP_API_URL; 
 
@@ -35,14 +35,16 @@ function SongDetails() {
   };
   
   return (
-    <div className='container mt-5'>
-      <Card>
+    <div className='container col-md-7 mt-5'>
+      <Card className='card-custom text-white p-4'>
         <Card.Body>
-          <Card.Title>{song.name} - {song.artist}</Card.Title>
+          <Card.Title>
+            <h4 className='fs-2'>{song.name} <span className='text-secondary'> - {song.artist}</span></h4>
+          </Card.Title>
           <Card.Text>
-            <h4>Album: <span>{song.album}</span></h4>
-            <p> <span>Time:</span> {song.time}</p>
-            <p>Favorite: 
+            <p className='fs-3'>Album<span className='text-secondary'> - {song.album}</span></p>
+            <Card.Text className="d-flex justify-content-between align-items-center">
+              <div>Favorite  
                 {song.is_favorite ? 
                   <span className='text-danger'>
                     <FontAwesomeIcon icon={faMusic}/>
@@ -51,15 +53,20 @@ function SongDetails() {
                   <span className='text-secondary'>
                     <FontAwesomeIcon icon={faMusic}/>
                   </span>  
-                }            
-            </p>
+                }  
+              </div>
+              <div>Time: {song.time}</div>
+            </Card.Text>
           </Card.Text>
 
-          <Button variant='primary' as={Link} to={`/songs`}>Back</Button>
-          <Button variant='warning' as={Link} to={`/songs/${index}/edit`}>Edit</Button>
-          <Button variant='danger' onClick={handleDelete}>Delete</Button>
         </Card.Body>
       </Card>
+
+      <div className='d-flex justify-content-center mt-3'>
+        <Button className='btn-lg custom-btn m-2' as={Link} to={`/songs`}>Back</Button>
+        <Button className='btn-lg custom-btn m-2' as={Link} to={`/songs/${index}/edit`}>Edit</Button>
+        <Button className='btn-lg custom-btn m-2' onClick={handleDelete}>Delete</Button>
+      </div>
     </div>
   );
 }

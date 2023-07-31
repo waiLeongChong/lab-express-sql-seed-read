@@ -1,7 +1,7 @@
 export default function FourOFour() {
   return (
     <div>
-      <h1>Sorry, no page found</h1>
+      <h2 className="text-center mt-2 text-secondary">Sorry, no page found</h2>
     </div>
   );
 }

@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";    
 import axios from "axios";
 import { Form, Button } from "react-bootstrap";
+import './EditForm.css';
 
 const API = process.env.REACT_APP_API_URL;
 
@@ -53,7 +54,7 @@ function EditForm() {
 
   return (
     <div className="container col-md-6 text-white mt-5">
-      <Form onSubmit={handleSubmit}>
+      <Form className="form-border" onSubmit={handleSubmit}>
         <Form.Group className="mb-3">
           <Form.Label htmlFor="name">Name</Form.Label>
           <Form.Control
@@ -111,9 +112,12 @@ function EditForm() {
           />
         </Form.Group>
 
-        <Button variant="primary" type="submit"  value="Save Edit">
-          Save Edit
-        </Button>
+        <div className="d-flex justify-content-center">
+          <Button className="edit-btn w-100" type="submit" value="Save Edit">
+            Save Edit
+          </Button>
+        </div>
+
       </Form>
     </div>
   );
