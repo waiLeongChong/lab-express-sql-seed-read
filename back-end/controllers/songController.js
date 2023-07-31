@@ -15,6 +15,7 @@ songs.get("/", async (req, res) => {
   try {
     const allSongs = await getAllSongs();
     // console.log("in get all songs", allSongs)
+    console.log(allSongs)
     res.json(allSongs);
   } catch (error) {
     console.error(error);
